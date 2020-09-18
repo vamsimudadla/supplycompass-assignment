@@ -22,6 +22,11 @@ class ErrorsStore {
   }
 
   @action.bound
+  getErrorDetails(id) {
+    return this.errorsList.find((errorItem) => errorItem.id === id);
+  }
+
+  @action.bound
   getErrorsList() {
     const { apiLoading, apiSuccess, apiFailed } = apiStatus;
     this.setGetErrorsListAPIStatus(apiLoading);

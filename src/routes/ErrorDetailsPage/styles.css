@@ -1,0 +1,8 @@
+.error-details-container {
+  white-space: pre;
+  display: flex;
+  flex: 1;
+  margin: 50px;
+  overflow: auto;
+  background-color: #ffff99;
+}

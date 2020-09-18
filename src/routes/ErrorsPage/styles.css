@@ -9,10 +9,21 @@
   display: flex;
   border: 1px solid #000033;
   border-radius: 5px;
-  min-height: 50px;
+  min-height: 60px;
   padding: 10px;
   margin: 20px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+  .list-item {
+    display: flex;
+    flex-direction: column;
+    min-height: unset;
+  }
+  .api-url-wrapper {
+    margin-top: 10px;
+  }
 }
 
 .wrapper {
