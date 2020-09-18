@@ -4,7 +4,7 @@ import { Provider } from "mobx-react";
 
 import ErrorDetailsPage from "./routes/ErrorDetailsPage";
 import ErrorsPage from "./routes/ErrorsPage";
-import store from "./store";
+import stores from "./store";
 import {
   ERRORS_PAGE_PATH,
   ERRORS_PAGE,
@@ -16,7 +16,7 @@ import "./App.css";
 function App() {
   return (
     <div className={"app"}>
-      <Provider store={store}>
+      <Provider errorsStore={stores.errorsStore}>
         <Router>
           <Switch>
             <Route

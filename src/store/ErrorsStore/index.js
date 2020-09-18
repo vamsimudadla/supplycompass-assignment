@@ -13,7 +13,7 @@ class ErrorsStore {
 
   @action.bound
   setGetErrorsListAPIStatus(apiStatus) {
-    this.setGetErrorsListAPIStatus = apiStatus;
+    this.getErrorsListAPIStaus = apiStatus;
   }
 
   @action.bound

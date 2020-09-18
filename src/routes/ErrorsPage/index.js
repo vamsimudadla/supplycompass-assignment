@@ -1,10 +1,15 @@
 import React, { Component } from "react";
-import Loader from "../../components/Loader";
+
+import LoadingWrapper from "../../HOCS/LoadingWrapper";
 
 class ErrorsPage extends Component {
   render() {
-    return <Loader />;
+    return (
+      <div>
+        <span>This is errors page</span>
+      </div>
+    );
   }
 }
 
-export default ErrorsPage;
+export default LoadingWrapper(ErrorsPage);
