@@ -15,23 +15,21 @@ import {
 function App() {
   return (
     <Provider stores={stores}>
-      <div>
-        <Router>
-          <Switch>
-            <Route
-              exact
-              path={ERRORS_PAGE_PATH}
-              key={ERRORS_PAGE}
-              component={ErrorsPage}
-            />
-            <Route
-              path={ERROR_DETAILS_PAGE_PATH}
-              key={ERROR_DETAILS_PAGE}
-              component={ErrorDetailsPage}
-            />
-          </Switch>
-        </Router>
-      </div>
+      <Router>
+        <Switch>
+          <Route
+            exact
+            path={ERRORS_PAGE_PATH}
+            key={ERRORS_PAGE}
+            component={ErrorsPage}
+          />
+          <Route
+            path={ERROR_DETAILS_PAGE_PATH}
+            key={ERROR_DETAILS_PAGE}
+            component={ErrorDetailsPage}
+          />
+        </Switch>
+      </Router>
     </Provider>
   );
 }
