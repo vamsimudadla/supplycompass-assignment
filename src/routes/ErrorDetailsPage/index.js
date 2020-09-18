@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import LoadingWrapper from "../../HOCS/LoadingWrapper";
+
 class ErrorDetailsPage extends Component {
   render() {
     return (
@@ -10,4 +12,4 @@ class ErrorDetailsPage extends Component {
   }
 }
 
-export default ErrorDetailsPage;
+export default LoadingWrapper(ErrorDetailsPage);

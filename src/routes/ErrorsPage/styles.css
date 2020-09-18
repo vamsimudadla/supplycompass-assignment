@@ -1,0 +1,30 @@
+.list-container {
+  display: flex;
+  flex: 1;
+  padding: 25px;
+  flex-direction: column;
+}
+
+.list-item {
+  display: flex;
+  border: 1px solid #000033;
+  border-radius: 5px;
+  min-height: 50px;
+  padding: 10px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.api-url-wrapper {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  word-break: break-all;
+}

@@ -22,7 +22,7 @@ function LoadingWrapper(WrappedComponent) {
         case apiLoading:
           return <Loader />;
         case apiSuccess:
-          return <WrappedComponent errorsStore={errorsStore} />;
+          return <WrappedComponent errorsStore={errorsStore} {...this.props} />;
         case apiFailed:
           return "Please try again...";
         default:
