@@ -3,8 +3,7 @@ import { observable } from "mobx";
 class ErrorsStore {
   @observable errorsList;
 
-  constructor(props) {
-    super(props);
+  constructor() {
     this.errorsList = [];
   }
 }
