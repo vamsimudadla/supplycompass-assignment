@@ -1,12 +1,9 @@
 import React, { Component } from "react";
+import Loader from "../../components/Loader";
 
 class ErrorsPage extends Component {
   render() {
-    return (
-      <div>
-        <span>This is errors page</span>
-      </div>
-    );
+    return <Loader />;
   }
 }
 
